@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      /*초기화 코드*/
       * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
       }
-
       html,
       body {
         width: 100%;
         height: 100%;
       }
+
       body {
         display: flex;
         flex-flow: column;
       }
 
       header {
-        background-color: salmon;
+        background-color: rgb(43, 197, 43);
         color: white;
         padding: 2rem;
       }
@@ -46,7 +45,6 @@
       nav ul li {
         color: inherit;
         background-color: inherit;
-
         cursor: pointer;
       }
 
@@ -56,12 +54,10 @@
 
       nav ul li a {
         /*
-          
           a tag를 가장 안쪽에 배치할때는
           display를 inline-block으로 설정해 주어야
           부모 Box와 어울리는 모양이 된다.
-          */
-
+        */
         display: inline-block;
         text-decoration: none;
         color: inherit;
@@ -75,27 +71,29 @@
 
       section#main_content {
         flex: 100%;
-        border: 1px solid salmon;
+        border: 1px solid red;
         width: 100%;
         margin: 10px auto;
         overflow: auto;
 
         display: flex;
       }
+
       #main_content aside {
         flex: 1;
-        border: 1px solid coral;
+        border: 1px solid green;
         margin: 10px 3px;
       }
 
       #main_content section {
         flex: 3;
-        border: 1px solid cornflowerblue;
+        border: 1px solid red;
         margin: 10px 3px;
         overflow: auto;
       }
+
       footer {
-        background-color: salmon;
+        background-color: blue;
         color: white;
       }
       footer address {
@@ -118,7 +116,6 @@
         <li><a href="/member/join">회원가입</a></li>
       </ul>
     </nav>
-
     <section id="main_content">
       <aside id="left_menu">
         <ul>
@@ -127,14 +124,13 @@
           <li>여름용품</li>
         </ul>
       </aside>
-
       <section id="content">
         <img
-          src="bmw-r-nineT.jpg"
+          src="tree-832079.jpg"
           alt="메인이미지"
           width="200px"
           height="200px"
-          style="float: left; margin: 5px"
+          style="float: left; margin: 5px;"
         />
         <p>
           오등은 자에 아 조선의 독립국임과 조선인의 자주민임을 선언하노라.
@@ -197,12 +193,10 @@
           맥진할 ㅅ다름인뎌.
         </p>
       </section>
-
       <aside id="right_menu">Right Menu</aside>
     </section>
-
     <footer>
-      <address>CopyRight &copy; skynate22@naver.com</address>
+      <address>CopyRight &copy; callor@callor.com</address>
     </footer>
   </body>
 </html>

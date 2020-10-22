@@ -1,0 +1,80 @@
+
+<style>
+table{
+    border-collapse: separate;
+    border:  1px solid olive;
+    width: 80%;
+    margin: 10px auto;
+}
+th, td{
+    border: 1px solid olivedrab;
+    margin: 3px;
+
+
+}
+</style>
+<script>
+    // 이벤트위임  table전체에 이벤트를 생성함으로인해 각각 속성값마다 이벤트를 거는것과같은 효과를 줄수있다.
+    document.addEventListener("DOMContentLoaded", function() {
+        
+        document.querySelector("table").addEventListener("click",function (event){
+       
+            let tag_name = event.target.tagName;
+           
+            //alert(tag_name);
+            if(tag_name === "TD"){
+               
+                let text = event.target.textContent;
+                alert(text);
+            }
+        })
+        
+    });
+
+</script>
+<table>
+
+    <tr>
+        <th>No</th>
+        <th>일자</th>
+        <th>시각</th>
+        <th>제목</th>
+        <th>조회수</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>

@@ -4,34 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
       body {
         width: 100%;
       }
-
       section {
+        margin: 10px auto;
         display: flex;
         justify-content: center;
       }
+
       article {
         width: 40%;
         margin: 10px;
       }
+
       #pro_info h3,
       #pro_info p {
         display: inline-block;
         padding: 8px;
-        margin: 8px 4px; /*t , b : 8px, le,re*/
-        border-bottom: 2px solid sandybrown;
+        margin: 8px 4px; /* t, b: 8px, le,ri:4px;*/
+        border-bottom: 2px solid #ccc;
       }
 
       #pro_info h3 {
-        background-color: blanchedalmond;
-        color: coral;
+        background-color: #dddddd;
+        color: blue;
         font-weight: bold;
         text-align: right;
       }
+
       #pro_info p {
         width: 60%;
       }
@@ -40,20 +47,20 @@
   <body>
     <section id="view_main">
       <article id="pro_image">
-        <img src="bmw-r-nineT.jpg" width="100px" />
+        <img src="tree-832079.jpg" width="100%" />
       </article>
       <article id="pro_info">
         <h3>상품코드</h3>
-        <p>상품 코드</p>
+        <p>상품코드</p>
         <br />
-        <h3>상품 이름</h3>
-        <p>상품 이름</p>
+        <h3>상품이름</h3>
+        <p>상품이름</p>
         <br />
-        <h3>매입 단가</h3>
-        <p>매입 단가</p>
+        <h3>매입단가</h3>
+        <p>매입단가</p>
         <br />
-        <h3>판매 단가</h3>
-        <p>판매 단가</p>
+        <h3>판매단가</h3>
+        <p>판매단가</p>
         <br />
       </article>
     </section>
